@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif
+}
+
+.navbar_header {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 1rem;
+    /* border-bottom: 0.2rem solid rgb(61, 94, 61); */
+
+}
+
+
+.navbar_header img {width:230px;
+height:110px;}
+
+.navbar_btn {
+    border: 3px solid rgb(61, 94, 61);
+    align-self: center;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    margin: 0.4rem;
+    background: white;
+    transition: all 2s ease;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-8px, 7px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-6px, -5.5px);
+}
+
+.navbar_links {
+    list-style-type: none;
+    transition: all 1s ease;
+    height: 0;
+    overflow: hidden;
+}
+
+.navbar_collapse {
+/*     border-top: 3px solid rgb(61, 94, 61); */
+    height: 223px;
+
+}
+
+/* i {
+    margin-right: 10px;
+} */
+
+.navbar_single-link {
+    display: block;
+/*     background: rgb(218, 200, 169); */
+    background: black;
+    padding: 1rem;
+    padding-left: 30px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(248, 241, 241);
+    transition: all 1s ease;
+    cursor: pointer;
+}
+
+.navbar_single-link:hover {
+    padding-left: 2.5rem;
+    color: rgb(61, 94, 61);
+    background: rgba(218, 200, 169, 0.5);
+
+}
+
+.header_details {
+    height: auto;
+    /* min-height: calc(100vh - 78px); */
+    background: url(../photo2.jpg)center/cover no-repeat;
+	background-blend-mode:darken;
+	
+}
+
+#header_text{text-align:center;
+padding:10%;
+width:100%;
+line-height:;
+	}
+	
+	
+@media screen and (max-width : 760px){
+	#header_text{padding:10%;
+	width:100%;}
+}
+	
+	
+#header_text h1 {font-size:45px;
+font-weight:600;
+letter-spacing:;
+color:white;
+text-shadow:1px 1px black;}
+
+#header_text h2{font-size:32px;
+font-weight:400;
+color:white;
+margin-top:2%;
+margin-bottom:2%;
+font-family:helvetica;
+letter-spacing:1px;}
+
+#header_text button{
+float:center;
+width:200.172px;
+margin-left:4%;
+background:rgb(220, 30, 50);
+height:45px;
+color:white;
+font-size:13px;
+font-weight:600;
+line-height:30px;
+letter-spacing:2px;
+border-width:0px;
+border-radius:3px;
+padding-bottom:8px;
+padding-left:24px;
+padding-right:24px;
+padding-top:8px;
+font-family:Montserrat, sans-serif;
+display:inline-block;}
+
+
+@media screen and (max-width : 1080px){
+	#header_text button{width:216.172px;
+	margin:3%;}
+}
+
+
+.services {padding:3%;
+background:black;}
+
+
+
+.wrapper_details{background-color:#101010;
+padding:9px;
+text-align:left}
+
+.wrapper_details h2{color:white;
+font-size:25px;
+letter-spacing:2px;
+font-family:"montserrat", sans-serif;
+font-weight:500;
+text-transform:uppercase;
+margin:3rem 0 2rem;
+line-height:30px;}
+
+.wrapper_details p{ font-size:17px;
+font-weight:600;
+letter-spacing:1px;
+line-height:34px;
+margin-bottom:20px;
+color:#afafaf}
+
+.wrapper_details_buttons{
+text-align:center;}
+
+.wrapper_details-text{margin:5%}
+
+
+.wrapper_details_buttons button{float:center;
+width:250.172px;
+background:rgb(220, 30, 50);
+height:45px;
+color:white;
+font-size:13px;
+font-weight:600;
+line-height:30px;
+letter-spacing:2px;
+border-width:0px;
+border-radius:3px;
+padding-bottom:8px;
+padding-left:24px;
+padding-right:24px;
+padding-top:8px;
+font-family:Montserrat, sans-serif;
+display:inline-block;}
+
+@media screen and (max-width : 1080px){.wrapper_details_buttons button{
+	width:100%;
+	margin-top:3%;}
+	
+	.wrapper_details{text-align:center}
+}
+
+#car_gallery{background-color:#101010}
+
+
+.car_gallery{padding:5%;
+text-align:center;
+height:50%;
+width:100%;
+}
+
+.car_gallery img{
+    width:  30%;
+	height:50%;}
+	
+	@media screen and (max-width : 1080px){
+		.car_gallery img{width:100%}
+		
+		.car_gallery_text{text-align:center;}
+	}
+
+.car_gallery img:hover{}
+
+
+
+.car_gallery_text{text-align:center;}
+
+.car_gallery_text p {
+ font-size:17px;
+font-weight:600;
+letter-spacing:1px;
+word-spacing:1px;
+line-height:34px;
+margin-bottom:20px;
+color:#afafaf}
+
+
+.car_gallery_text button {float:center;
+width:170.172px;
+background:rgb(220, 30, 50);
+height:45px;
+color:white;
+font-size:13px;
+font-weight:600;
+line-height:30px;
+letter-spacing:1px;
+border-width:0px;
+border-radius:3px;
+padding-bottom:8px;
+padding-left:24px;
+padding-right:24px;
+padding-top:8px;
+font-family:Montserrat, sans-serif;
+display:inline-block;
+text-transform:uppercase;
+margin-bottom:2%}
+
+.footer{
+min-height:55vh;
+background-color: #262626;
+align-items:center;
+Color:white;
+position:relative;
+margin: 0 auto;
+}
+
+
+#first {
+  width:30%;
+  float:left;
+  text-align:center;
+  margin-top:2%;
+  
+}
+#second {
+  width:40%;
+  float:left;
+  text-align:center;
+  margin-top:2%;
+}
+#third {
+  width:30%;
+  float:left;
+text-align:center;
+margin-top:2%;}
+
+
+@media screen and (max-width : 1080px){
+	#first,
+	#second,
+	#third{width:100%;
+	display: -webkit-box;
+    display:;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;}
+}
+
+
+#wrapper h2{
+ font-size:18px;
+letter-spacing:2px;
+font-family:"montserrat", sans-serif;
+font-weight:500;
+text-transform:uppercase;
+margin:2rem 0 0.6rem;}
+
+
+
+
+#first button{float:;
+width:195.172px;
+background:rgb(220, 30, 50);
+height:45px;
+color:white;
+font-size:13px;
+font-weight:600;
+line-height:30px;
+letter-spacing:2px;
+border-width:0px;
+border-radius:3px;
+padding-bottom:8px;
+padding-left:24px;
+padding-right:24px;
+padding-top:8px;
+font-family:Montserrat, sans-serif;
+display:inline-block;}
+
+
+#wrapper a{color:#afafaf;
+text-decoration:none;
+line-height:50px;
+font-size:18px;
+font-weight:600;
+letter-spacing:1px;
+word-spacing:1px;}
+
+#wrapper p{ text-decoration:none;
+line-height:50px;
+font-size:18px;
+font-weight:600;
+color:white;
+letter-spacing:1px;
+word-spacing:2px;}
+
+
+#wrapper a:hover{color:white}
+
+
+@media screen and (max-width : 768px){
+	.footer{min-height:80vh;
+	display: flex;
+  flex-direction: column;}
+}
+
+.copyright{background-color:#1c1c1c;
+text-align:center;
+margin-top:1px;}
+
+.copyright_text{padding:1%}
+
+.copyright_text h2{font-size:12px;
+letter-spacing:2px;
+font-family:"montserrat", sans-serif;
+font-weight:500;
+text-transform:uppercase;
+margin:2rem 0 0.6rem;
+color:white;
+line-height:15px;}
+
+
+.cp_social{margin:2%;}
+.cp_social img{margin:10px}
